@@ -7,10 +7,10 @@ body {
     }
     .container {
       max-width: 90%;
-      margin: 30px auto;
+      margin: 10px auto;
         background: #fff;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 24px;
+      padding: auto;
     }
     .header-img {
       display: block;
@@ -27,7 +27,7 @@ body {
     table {
       border-collapse: collapse;
       width: 90%;
-      margin: 0 auto 24px auto;
+      margin: 10px auto 24px auto;
       background: #fff;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
