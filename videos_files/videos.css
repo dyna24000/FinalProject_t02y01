@@ -1,0 +1,117 @@
+/* Clean light mode style and blue footer for videos.html - Video smaller, no footer radius, no footer image radius */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 18px 0;
+    text-align: center;
+}
+
+.header h1 {
+    color: #003399;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.video-card {
+    background: #f4f7fb;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #b3c6ff55;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px #00339933;
+}
+
+.video-card video,
+.video-card iframe,
+.video-card img {
+    width: 60%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #e3eaff;
+    border-bottom: 1px solid #b3c6ff;
+    border-radius: 12px 12px 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px #b3c6ff33;
+}
+
+.video-info {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #003399;
+    margin-bottom: 8px;
+}
+
+.video-desc {
+    font-size: 0.98em;
+    color: #222;
+    margin-bottom: 0;
+    background: #e3eaff;
+    border-radius: 0 0 12px 12px;
+    padding: 8px 0;
+    font-weight: bold;
+}
+
+footer {
+    color: #fff;
+    background: #003399;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 40px;
+    /* Removed border radius */
+    box-shadow: 0 -2px 16px #b3c6ff;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 700px) {
+    .video-grid {
+        gap: 16px;
+    }
+    .video-card video,
+    .video-card iframe,
+    .video-card img {
+        width: 100%;
+        max-width: 100%;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

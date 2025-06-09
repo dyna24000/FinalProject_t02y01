@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001696;
+    border-radius: 8px;
+}
+
+li {
+    float: left;
+    border-radius: 8px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #33ff00;
+    border-radius: 8px;
+}
+
+li.dropdown {
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin: 40px auto 0 auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    color: #001696;
+    text-shadow: 0 2px 8px #e0e0e0;
+}
+
+p {
+    text-align: justify;
+    border: 1px solid #e0e0e0;
+    background: #f4f4f4;
+    padding: 18px 20px;
+    margin: 18px 0;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: box-shadow 0.3s;
+    color: #222;
+}
+
+p:hover {
+    box-shadow: 0 4px 24px #00169622;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 24px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+footer {
+    color: white;
+    background-color: darkblue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 1em;
+        padding: 10px 8px;
+    }
+    ul {
+        font-size: 0.95em;
+    }
+}

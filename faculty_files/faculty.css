@@ -1,0 +1,68 @@
+/* CSS for Faculty Page - Faculty List and Details */
+body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 90%;
+      margin: 30px auto;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 24px;
+    }
+    .header-img {
+      display: block;
+      margin: 0 auto 10px auto;
+      max-width: 300px;
+      height: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #001696;
+      margin-bottom: 24px;
+      font-size: 2em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0 auto 24px auto;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    th, td {
+      border: 1px solid #888;
+      padding: 10px 8px;
+      text-align: center;
+      font-size: 1em;
+      background: #f9f9f9;
+    }
+    th {
+      background: #001696;
+      color: #fff;
+      font-weight: bold;
+    }
+    tr:nth-child(even) td {
+      background: #f4f4f4;
+    }
+    img {
+      max-width: 70px;
+      height: auto;
+      background: #eee;
+      display: block;
+      margin: 0 auto;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 8px;
+      }
+      table, th, td {
+        font-size: 0.95em;
+        padding: 6px 2px;
+      }
+      .header-img {
+        max-width: 70vw;
+      }
+    }
