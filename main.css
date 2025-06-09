@@ -94,12 +94,6 @@ body {
             padding: 5px 0;
         }
 
-h1, p {
-            text-align: justify;
-            width: 90%;
-            height: auto;
-}
-
         footer {
             color: white;
             background-color: darkblue;
