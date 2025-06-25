@@ -1,26 +1,66 @@
-body, html {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html, body {
   height: 100%;
   font-family: 'Segoe UI', 'Khmer OS System', sans-serif;
   background-color: #f5f5f5;
-  position: relative;
 }
 
 .page-wrapper {
-  padding-bottom: 60px; /* Reserve space for the footer */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px 10px;
+  font-size: 22px;
+  color: #003893;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: #003893;
   color: white;
   text-align: center;
-  padding: 15px 10px;
+  padding: 12px 10px;
   font-size: 14px;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
-  z-index: 10;
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
 }
